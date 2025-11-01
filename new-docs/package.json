@@ -1,0 +1,16 @@
+{
+  "name": "pear-docs",
+  "version": "2.0.0",
+  "description": "Pear Runtime Documentation",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0"
+  }
+}
+

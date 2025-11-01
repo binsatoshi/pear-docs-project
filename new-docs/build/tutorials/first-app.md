@@ -11,7 +11,7 @@ A real-time chat app where:
 - 🎨 Modern, responsive UI
 - 📱 Works on Desktop (Windows, Mac, Linux)
 
-![Final Chat App](../../../assets/chat-app-final.png)
+![Final Chat App](/assets/chat-app-1.png)
 
 :::tip What You'll Learn
 - Setting up a Pear desktop project

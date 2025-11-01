@@ -11,6 +11,9 @@ export default defineConfig({
   // If deploying to custom domain or https://username.github.io/, use '/'
   base: '/pear-docs-project/',
   
+  // Ignore dead links for prototype/placeholder pages
+  ignoreDeadLinks: true,
+  
   // Theme configuration
   themeConfig: {
     // Logo

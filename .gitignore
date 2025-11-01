@@ -4515,3 +4515,7 @@ node_modules/zwitch/readme.md
 submission-package/
 pear-docs-prototype.zip
 *.zip
+
+# PDF exports (share separately)
+pdf-exports/
+pear-docs-pdf-exports.zip

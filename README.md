@@ -8,7 +8,7 @@ A comprehensive redesign of the Pear Runtime documentation to improve developer 
 
 ## 📋 Overview
 
-This project analyzes the current Pear documentation and proposes a developer-first restructuring inspired by industry leaders like [Solana](https://solana.com/docs) and [ThirdWeb](https://portal.thirdweb.com/). The redesign includes 5 fully-implemented prototype pages demonstrating improved information architecture, simplified terminology, and clear learning paths.
+This project analyzes the current Pear documentation and proposes a developer-first restructuring. The redesign includes 5 fully-implemented prototype pages demonstrating improved information architecture, simplified terminology, and clear learning paths.
 
 **Project Goal:** Transform technically comprehensive documentation into an accessible, developer-friendly experience that reduces time-to-first-app from 30-60 minutes to under 15 minutes.
 
@@ -26,7 +26,7 @@ A one-page analysis covering:
 - Success metrics and implementation timeline
 
 ### 2. Live Demo Site
-**[View Live Prototype →](https://YOUR-USERNAME.github.io/pear-docs-project/)**
+**[View Live Prototype →](https://binsatoshi.github.io/pear-docs-project/)**
 
 Fully-functional documentation site deployed via GitHub Pages featuring:
 - Modern, Alchemy-inspired homepage

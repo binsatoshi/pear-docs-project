@@ -41,20 +41,20 @@ Five fully-written pages demonstrating the new approach:
 
 | Page | Purpose | Lines |
 |------|---------|-------|
-| [Homepage](new-docs/index.md) | Value proposition & entry points | 152 |
-| [Quick Start](new-docs/build/quickstart/index.md) | 5-minute setup guide | 500+ |
-| [Core Concepts](new-docs/learn/concepts/index.md) | P2P fundamentals explained simply | 800+ |
-| [First App Tutorial](new-docs/build/tutorials/first-app.md) | Complete chat application | 1,000+ |
-| [API Reference](new-docs/reference/api/index.md) | Use-case organized API docs | 1,500+ |
+| [Homepage](docs/index.md) | Value proposition & entry points | 152 |
+| [Quick Start](docs/build/quickstart/index.md) | 5-minute setup guide | 500+ |
+| [Core Concepts](docs/learn/concepts/index.md) | P2P fundamentals explained simply | 800+ |
+| [First App Tutorial](docs/build/tutorials/first-app.md) | Complete chat application | 1,000+ |
+| [API Reference](docs/reference/api/index.md) | Use-case organized API docs | 1,500+ |
 
 **Total:** 4,200+ lines of high-quality content with 30+ working code examples
 
 ### 4. Complete Structure
 
 Full reorganization plan with 80+ pages mapped:
-- [STRUCTURE.md](new-docs/STRUCTURE.md) - Complete navigation hierarchy
-- [FRAMEWORK.md](new-docs/FRAMEWORK.md) - VitePress justification & setup
-- [Placeholder pages](new-docs/) - Structured templates for future content
+- [STRUCTURE.md](docs/STRUCTURE.md) - Complete navigation hierarchy
+- [FRAMEWORK.md](docs/FRAMEWORK.md) - VitePress justification & setup
+- [Placeholder pages](docs/) - Structured templates for future content
 
 ---
 
@@ -64,18 +64,18 @@ Full reorganization plan with 80+ pages mapped:
 
 Visit the deployed prototype:
 ```
-https://YOUR-USERNAME.github.io/pear-docs-project/
+https://binsatoshi.github.io/pear-docs-project/
 ```
 
 ### Run Locally
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/pear-docs-project.git
+git clone https://github.com/binsatoshi/pear-docs-project.git
 cd pear-docs-project
 
 # Install dependencies
-cd new-docs
+cd docs
 npm install
 
 # Start dev server
@@ -87,7 +87,7 @@ npm run docs:dev
 ### Build for Production
 
 ```bash
-cd new-docs
+cd docs
 npm run docs:build
 npm run docs:preview
 ```
@@ -120,7 +120,7 @@ npm run docs:preview
 ## 🏗️ Structure Overview
 
 ```
-new-docs/
+docs/
 ├── index.md                        Homepage (Alchemy-style)
 ├── STRUCTURE.md                    Complete reorganization plan
 ├── FRAMEWORK.md                    VitePress justification
@@ -159,7 +159,7 @@ new-docs/
 - GitBook (current - limited customization, vendor lock-in)
 - Nextra (less mature)
 
-**Full justification:** [FRAMEWORK.md](new-docs/FRAMEWORK.md)
+**Full justification:** [FRAMEWORK.md](docs/FRAMEWORK.md)
 
 ### Deployment
 - **GitHub Actions** - Automatic CI/CD on every push
@@ -192,11 +192,11 @@ new-docs/
 ### Documentation Files
 - `ANALYSIS.md` - Technical analysis (also available as [Google Doc](https://docs.google.com/document/d/1ZuKPUqQ2K4u1f48cPs4AymfMDjZ9tP1UExvoilxJHpA/edit?usp=sharing))
 - `ANALYSIS.txt` - Plain text version for easy copying
-- `new-docs/` - Complete VitePress documentation site
+- `docs/` - Complete VitePress documentation site
 
 ### Deployment Files
 - `.github/workflows/deploy.yml` - GitHub Actions workflow
-- `new-docs/.vitepress/config.mjs` - VitePress configuration
+- `docs/.vitepress/config.mjs` - VitePress configuration
 - `DEPLOY-TO-GITHUB-PAGES.md` - Complete deployment guide
 - `QUICK-DEPLOY.md` - 5-minute deployment reference
 
@@ -227,7 +227,7 @@ A 3-4 minute screen recording demonstrating the live prototype:
 
 ### Local Development
 ```bash
-cd new-docs
+cd docs
 npm install
 npm run docs:dev
 ```
@@ -238,7 +238,7 @@ npm run docs:dev
 - **Configuration:** VitePress config in `.vitepress/config.mjs`
 
 ### Making Changes
-1. Edit markdown files in `new-docs/`
+1. Edit markdown files in `docs/`
 2. Changes hot-reload instantly in browser
 3. Commit and push to trigger auto-deployment
 
@@ -294,8 +294,8 @@ npm run docs:dev
 
 For questions about this proposal:
 - **Analysis:** See [Google Doc](https://docs.google.com/document/d/1ZuKPUqQ2K4u1f48cPs4AymfMDjZ9tP1UExvoilxJHpA/edit?usp=sharing)
-- **Technical details:** See `new-docs/FRAMEWORK.md`
-- **Structure:** See `new-docs/STRUCTURE.md`
+- **Technical details:** See `docs/FRAMEWORK.md`
+- **Structure:** See `docs/STRUCTURE.md`
 
 ---
 

@@ -1,0 +1,233 @@
+/**
+ * Custom styles for Pear Runtime documentation
+ * Extends VitePress default theme
+ */
+
+/* ===== Brand Colors ===== */
+:root {
+  --vp-c-brand: #3eaf7c;
+  --vp-c-brand-light: #4abf8a;
+  --vp-c-brand-lighter: #63d4a0;
+  --vp-c-brand-lightest: #a6f1c9;
+  --vp-c-brand-dark: #2d9d67;
+  --vp-c-brand-darker: #1e7e52;
+  --vp-c-brand-dimm: rgba(62, 175, 124, 0.08);
+}
+
+/* ===== Dark mode brand colors ===== */
+.dark {
+  --vp-c-brand: #4abf8a;
+  --vp-c-brand-light: #63d4a0;
+  --vp-c-brand-lighter: #7ee8b3;
+  --vp-c-brand-lightest: #a6f1c9;
+  --vp-c-brand-dark: #3eaf7c;
+  --vp-c-brand-darker: #2d9d67;
+  --vp-c-brand-dimm: rgba(74, 191, 138, 0.12);
+}
+
+/* ===== Home page hero customization ===== */
+.VPHome .VPHero .name {
+  background: linear-gradient(120deg, var(--vp-c-brand) 30%, var(--vp-c-brand-lighter));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHome .VPHero .tagline {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== Feature cards styling ===== */
+.VPHome .VPFeatures .VPFeature {
+  transition: all 0.3s;
+}
+
+.VPHome .VPFeatures .VPFeature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Custom guide cards (from homepage) ===== */
+.guides-section {
+  max-width: 1152px;
+  margin: 80px auto 40px;
+  padding: 0 24px;
+}
+
+.guides-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.guide-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.guide-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.25s;
+}
+
+.guide-card:hover {
+  border-color: var(--vp-c-brand);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.guide-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: var(--vp-c-text-1);
+}
+
+.guide-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+  margin: 0 0 16px 0;
+}
+
+.guide-card a {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--vp-c-brand);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.guide-card a:hover {
+  color: var(--vp-c-brand-dark);
+}
+
+@media (max-width: 768px) {
+  .guide-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .guides-section {
+    margin: 40px auto 20px;
+  }
+}
+
+/* ===== Code block enhancements ===== */
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.vp-doc div[class*='language-'] code {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ===== Sidebar enhancements ===== */
+.VPSidebar {
+  padding-top: 24px;
+}
+
+.VPSidebarItem.level-0 .text {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+/* ===== Table styling ===== */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+  text-align: left;
+}
+
+.vp-doc tr:hover {
+  background: var(--vp-c-bg-soft);
+}
+
+/* ===== Custom containers ===== */
+.vp-doc .custom-block.tip {
+  border-color: var(--vp-c-brand);
+}
+
+.vp-doc .custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand);
+}
+
+/* ===== Search box styling ===== */
+.VPNavBarSearch {
+  margin-right: 12px;
+}
+
+/* ===== Mobile responsive adjustments ===== */
+@media (max-width: 960px) {
+  .VPHome .VPHero .name {
+    font-size: 2.5rem;
+  }
+  
+  .VPHome .VPHero .tagline {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== Link hover effects ===== */
+.vp-doc a {
+  transition: color 0.25s;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-dark);
+}
+
+/* ===== Badge styling ===== */
+.vp-doc .badge {
+  font-size: 0.875rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.vp-doc .badge.tip {
+  background: var(--vp-c-brand-dimm);
+  color: var(--vp-c-brand);
+}
+
+/* ===== Footer enhancements ===== */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 32px;
+  margin-top: 64px;
+}
+
+/* ===== Smooth scrolling ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Focus styles for accessibility ===== */
+a:focus,
+button:focus {
+  outline: 2px solid var(--vp-c-brand);
+  outline-offset: 2px;
+}
+
+/* ===== Inline code styling ===== */
+.vp-doc :not(pre) > code {
+  background-color: var(--vp-c-bg-soft);
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
